@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Academy</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- icon style cdn -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
+    <!-- lint google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- -----------swiper----- -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>Raj Academy</h4>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5" width="25" height="25" id="heart"><defs><clipPath id="a"><path d="M0 38h38V0H0v38Z"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)"><path fill="#dd2e44" d="M3.067 25.68c0 8.799 12.184 12.06 15.933 1.874 3.749 10.186 15.933 6.925 15.933-1.874C34.933 16.12 19 3.999 19 3.999S3.067 16.12 3.067 25.68"></path></g></svg>
+                
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+            
+
+            <button id="open-menu-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    id="menu">
+                    <path fill="#000"
+                        d="M3 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm1 5a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2H4z">
+                    </path>
+                </svg></button>
+            <button id="close-menu-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 512 512" id="close">
+                    <path
+                        d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z">
+                    </path>
+                </svg></button>
+                
+
+            
+
+
+
+        </div>
+    </nav>
+    <!-- -----------------------------End of navbar--------------------------- -->
+
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <p> We are offering a diverse range of learning opportunities and resources to individuals seeking to expand their knowledge and skills.  </p>
+                <a href="courses.html" class="btn btn-primary">GEt Started</a>
+
+            </div>
+
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="./images/header.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- -----------------------------End of header------------------------------- -->
+
+
+    <section class="categories">
+        <div class="container categories__container">
+
+            <div class="categories__left">
+                <h1>Categories</h1>
+                <p>
+                   These are some categories we focus on.
+                </p>
+                <a href="./courses.html" class="btn">Learn more</a>
+            </div>
+
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 25 25" id="btc">
+                            <path
+                                d="M12.5,2A10.5,10.5,0,1,0,23,12.5,10.512,10.512,0,0,0,12.5,2Zm0,20A9.5,9.5,0,1,1,22,12.5,9.511,9.511,0,0,1,12.5,22Z">
+                            </path>
+                            <path
+                                d="M9.191 5.767a.5.5 0 1 0-.441-.9A8.568 8.568 0 0 0 4.9 8.684a.5.5 0 0 0 .222.671.486.486 0 0 0 .224.054A.5.5 0 0 0 5.8 9.133 7.568 7.568 0 0 1 9.191 5.767zM15.7 7.779l.485-1.419a.5.5 0 0 0-.947-.323L14.75 7.456 13.8 7.133l.484-1.419a.5.5 0 1 0-.946-.323L12.857 6.81l-1.419-.484L10.491 6a.5.5 0 1 0-.323.946l.473.162L9.188 11.369 7.734 15.628l-.473-.161a.5.5 0 1 0-.323.946l.946.323 1.42.485L8.819 18.64a.5.5 0 0 0 .312.635.508.508 0 0 0 .161.027.5.5 0 0 0 .474-.339l.484-1.419.946.323-.484 1.419a.5.5 0 0 0 .311.635.51.51 0 0 0 .162.027.5.5 0 0 0 .473-.339l.485-1.419a3 3 0 0 0 3.336-4.676A2.994 2.994 0 0 0 15.7 7.779zM15.005 16a2 2 0 0 1-2.539 1.246L10.1 16.436h0L8.68 15.951l1.292-3.785 3.786 1.292A2 2 0 0 1 15.005 16zm1.615-4.732a2 2 0 0 1-2.539 1.246L10.3 11.219l1.292-3.785L14.9 8.564h0l.471.161A2 2 0 0 1 16.62 11.265z">
+                            </path>
+                        </svg>
+                        <h5>Blockchain</h5>
+                        <p>Blockchain development is a valuable endeavor that equips individuals with the skills and knowledge needed to navigate the world of decentralized technologies.
+                        </p>
+                    </span>
+                </article>
+
+
+
+                <article class="category">
+                    <span class="category__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 96 96" id="game-development">
+                            <g data-name="Game Development">
+                                <path
+                                    d="M91,4.27H5a5,5,0,0,0-5,5V66a5,5,0,0,0,5,5H29.11V82.83H17.43a1,1,0,0,0-1,1v6.9a1,1,0,0,0,1,1H78.57a1,1,0,0,0,1-1v-6.9a1,1,0,0,0-1-1H66.89V71H91a5,5,0,0,0,5-5V9.25A5,5,0,0,0,91,4.27Zm-89,5a3,3,0,0,1,3-3H91a3,3,0,0,1,3,3V56.89H2ZM77.57,89.73H18.43v-4.9H77.57Zm-12.68-6.9H31.11V71H64.89ZM94,66a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V58.89H94Z">
+                                </path>
+                                <path
+                                    d="M88.76,39.63c0-1.46-.06-1.25-5.18-19.84a5.12,5.12,0,0,0-4.91-3.74H72.82a5.08,5.08,0,0,0-4.24,2.27A3.08,3.08,0,0,1,66,19.7H58.86A3.16,3.16,0,0,1,56,18.32a5.09,5.09,0,0,0-4.24-2.27H45.92A5.12,5.12,0,0,0,41,19.79c-5.43,19.69-5,18-5.12,19a7.49,7.49,0,0,0,14.5,3.37L52.21,37a2.56,2.56,0,0,1,2.42-1.72H70A2.57,2.57,0,0,1,72.38,37l1.82,5.14a7.49,7.49,0,0,0,14.56-2.48Zm-2,.47A5.5,5.5,0,0,1,76,41.16h2.27a3.45,3.45,0,0,0,3.45-3.45,1.46,1.46,0,0,1,1.46-1.46H86A10.75,10.75,0,0,1,86.74,40.1Zm-22-18.4v4.15H59.86V21.7Zm-25.05,22A5.47,5.47,0,0,1,38,38.16l.52-1.91h2.87a1.45,1.45,0,0,1,1.45,1.46,3.46,3.46,0,0,0,3.46,3.45H48.6A5.51,5.51,0,0,1,39.68,43.73ZM70,33.25H54.63a4.57,4.57,0,0,0-4.31,3l-1,2.86h-3a1.46,1.46,0,0,1-1.46-1.45,3.46,3.46,0,0,0-3.45-3.46H39.1l3.84-13.93a3.11,3.11,0,0,1,3-2.27h5.85a3.11,3.11,0,0,1,2.58,1.38,5,5,0,0,0,3.51,2.21v5.21a1,1,0,0,0,1,1h6.87a1,1,0,0,0,1-1V21.64a5,5,0,0,0,3.51-2.21,3.11,3.11,0,0,1,2.58-1.38h5.85a3.11,3.11,0,0,1,3,2.27l3.84,13.93H83.17a3.46,3.46,0,0,0-3.46,3.46,1.45,1.45,0,0,1-1.45,1.45h-3l-1-2.86A4.59,4.59,0,0,0,70,33.25Z">
+                                </path>
+                                <path
+                                    d="M50.73 24.13H49V22.38a1 1 0 00-2 0v1.75H45.23a1 1 0 000 2H47v1.75a1 1 0 102 0V26.13h1.75a1 1 0 000-2zM75.71 25.85a1 1 0 00-1 1v1a1 1 0 002 0v-1A1 1 0 0075.71 25.85zM75.71 24.41a1 1 0 001-1v-1a1 1 0 10-2 0v1A1 1 0 0075.71 24.41zM75 25.13a1 1 0 00-1-1H73a1 1 0 000 2h1A1 1 0 0075 25.13zM77.43 26.13h1a1 1 0 000-2h-1a1 1 0 000 2zM59.76 29.58H58a1 1 0 000 2h1.81a1 1 0 100-2zM66.64 29.58H64.82a1 1 0 000 2h1.82a1 1 0 000-2zM26 17.51a1 1 0 00-1.42 0 1 1 0 000 1.41l4.86 4.86L24.6 28.63a1 1 0 00.71 1.71A1 1 0 0026 30l5.56-5.56a1 1 0 000-1.41zM14.87 30a1 1 0 101.42-1.41l-4.86-4.85 4.86-4.86a1 1 0 000-1.41 1 1 0 00-1.42 0L9.31 23.07a1 1 0 000 1.41z">
+                                </path>
+                                <path
+                                    d="M17.72 27.5a1 1 0 00.71-.29l5.45-5.45a1 1 0 000-1.41 1 1 0 00-1.42 0L17 25.79A1 1 0 0017.72 27.5zM24.3 33.49H8.24a1 1 0 000 2H24.3a1 1 0 100-2zM24.3 37.62H8.24a1 1 0 000 2H24.3a1 1 0 100-2zM24.3 41.75H8.24a1 1 0 000 2H24.3a1 1 0 000-2zM17.36 45.87H8.24a1 1 0 000 2h9.12a1 1 0 000-2z">
+                                </path>
+                            </g>
+                        </svg>
+                        <h5>Graphic Desinging</h5>
+                        <p>Graphic design is a dynamic and creative field that blends visual aesthetics with effective communication.
+
+                        </p>
+                    </span>
+                </article>
+
+
+                <article class="category">
+                    <span class="category__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 48 48" id="finance-chart">
+                            <path
+                                d="M18.06,42H7a3,3,0,0,1-3-3V7A3,3,0,0,1,7,4h6V6H7A1,1,0,0,0,6,7V39a1,1,0,0,0,1,1H18.06ZM36,7v7h2V7a3,3,0,0,0-3-3H29V6h6A1,1,0,0,1,36,7ZM13,10V8H9A1,1,0,0,0,8,9V37a1,1,0,0,0,1,1h9V36H10V10ZM32,29.93h2V9a1,1,0,0,0-1-1H29v2h3ZM14,11V3a1,1,0,0,1,1-1H27a1,1,0,0,1,1,1v8a1,1,0,0,1-1,1H15A1,1,0,0,1,14,11Zm2-1H26V4H16Zm12,6H14v2H28Zm0,6H14v2H28Zm0,6H14v2H28ZM19,8h4V6H19ZM44,44v2H18V44h2V37a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v7h2V33a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1V44h2V29a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1V44ZM24,44V38H22v6Zm8,0V34H30V44Zm8,0V30H38V44ZM38,16v1H37a1,1,0,0,0-1,1v3a1,1,0,0,0,1,1h3v1H36v2h2v1h2V25h1a1,1,0,0,0,1-1V21a1,1,0,0,0-1-1H38V19h4V17H40V16Z"
+                                data-name="98 Clipboard, Analysis, Report, Reporting, Seo Analysis, Seo Report"></path>
+                        </svg>
+                        <h5>Finance</h5>
+                        <p>Finance is a fundamental aspect of both personal and business life, encompassing the management of money, investments, and financial resources.
+
+                        </p>
+                    </span>
+                </article>
+
+
+                <article class="category">
+                    <span class="category__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            enable-background="new 0 0 32 32" viewBox="0 0 32 32" id="marketing-growth">
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
+                                d="M14,12c-2-2-5-2-7-2H5.5C4.119,10,3,8.881,3,7.5v0C3,6.119,4.119,5,5.5,5H7c2,0,5,0,7-2V12z">
+                            </path>
+                            <line x1="7" x2="7" y1="5" y2="10" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></line>
+                            <line x1="6" x2="7" y1="10" y2="15" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></line>
+                            <line x1="19" x2="21" y1="7.5" y2="7.5" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></line>
+                            <line x1="18" x2="19.732" y1="4" y2="3" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></line>
+                            <line x1="18" x2="19.732" y1="11" y2="12" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></line>
+                            <rect width="3" height="5" x="3" y="24" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></rect>
+                            <rect width="3" height="6" x="10" y="23" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></rect>
+                            <rect width="3" height="7" x="17" y="22" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></rect>
+                            <rect width="3" height="10" x="24" y="19" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></rect>
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2" d="M3,20c10.957,0,19.93-2.977,25.93-9.919">
+                            </path>
+                            <polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2" points="24 10 29 10 29 15"></polyline>
+                        </svg>
+                        <h5>Marketing</h5>
+                        <p>Marketing is a dynamic and essential discipline that involves promoting products, services, or ideas to a target audience in order to create awareness, generate interest, and drive engagement. 
+
+                        </p>
+                    </span>
+                </article>
+
+
+
+                <article class="category">
+                    <span class="category__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 50 50" id="music-tune">
+                            <path
+                                d="M33.053 27.25c-2.557 0-4.636 2.103-4.636 4.688s2.079 4.688 4.636 4.688c2.244 0 4.118-1.621 4.543-3.766a.989.989 0 0 0 .092-.41V10.625a1 1 0 0 0-1.209-.977l-18.729 4a1 1 0 0 0-.791.978V33.09a4.571 4.571 0 0 0-2.636-.839c-2.556 0-4.635 2.103-4.635 4.688s2.079 4.688 4.635 4.688c2.557 0 4.636-2.103 4.636-4.688 0-.112-.025-.217-.033-.326.009-.055.033-.104.033-.162V21.434l16.729-3.573V28.09a4.566 4.566 0 0 0-2.635-.84zm0 7.375c-1.453 0-2.636-1.206-2.636-2.688s1.183-2.688 2.636-2.688 2.635 1.206 2.635 2.688-1.182 2.688-2.635 2.688zm-18.731 5c-1.453 0-2.635-1.206-2.635-2.688s1.182-2.688 2.635-2.688 2.636 1.206 2.636 2.688-1.183 2.688-2.636 2.688zm4.636-20.236v-3.956l16.729-3.572v3.955l-16.729 3.573z">
+                            </path>
+                        </svg>
+                        <h5>Music</h5>
+                        <p>Music is a universal language that transcends cultural boundaries, evokes emotions, and enriches human experiences.
+
+                        </p>
+                    </span>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 64 64" id="business-manager">
+                            <path
+                                d="M62.6 35.15c-1.93-2.23-5.15-2.4-5.17-2.37-.22-.03-.42-.07-.59-.13 0 0-.01 0-.01-.01-.59-.19-.87-.49-.87-.93 2.27-2.14 2.59-5.54 2.6-5.67.09-.76.1-1.47.03-2.08-.39-4.46-4.1-5.49-5.92-5.44-.1 0-2.56-.07-4.33 1.64-1.15 1.12-1.72 2.69-1.71 4.68.01.37.03.77.07 1.17.01.15.33 3.56 2.6 5.7-.03.28-.2.62-.89.84h-.02c-.16.06-.34.09-.55.13-.56.03-3.9.35-5.61 2.93-.77-.13-1.32-.17-1.5-.18-.45-.07-.86-.16-1.22-.27h-.01c-.68-.23-1.22-.86-1.61-1.89-.53-1.35-.6-2.89-.58-3.31 0-.08.01-.15.02-.22 4.23-3.72 4.81-10 4.83-10.25.15-1.31.17-2.53.07-3.59v-.02c0-.02 0-.05-.01-.08-.84-9.57-10.16-9.33-10.18-9.33-.18-.01-4.39-.13-7.41 2.81-1.96 1.91-2.94 4.62-2.91 8.07.01.67.05 1.39.13 2.11.02.27.61 6.56 4.84 10.29 0 .05.01.09 0 .15-.02 1.44-.14 3.29-.25 3.62 0 .01-.01.01-.01.02-.34.66-1 1.15-1.99 1.47h-.02c-.33.11-.71.2-1.17.26-.19.01-.78.05-1.59.2-1.85-2.62-5.4-2.8-5.5-2.8-.22-.03-.41-.07-.58-.13h-.03c-.59-.19-.87-.49-.87-.93 2.27-2.14 2.59-5.54 2.6-5.67.09-.76.1-1.47.03-2.08-.39-4.46-4.07-5.5-5.92-5.44-.1 0-2.56-.07-4.32 1.64-1.15 1.12-1.72 2.69-1.71 4.68.01.37.03.77.07 1.17.01.15.33 3.56 2.6 5.7-.03.28-.2.62-.89.84h-.01c-.16.05-.34.09-.54.12-.47.03-3.4.28-5.21 2.37C.26 36.23-.19 37.93.04 39.97l.34 3.11c.04.36.27.66.61.8.18.07 4.04 1.57 10.17 1.57.2 0 .41-.01.61-.01-.05.84-.04 1.72.07 2.64l.63 5.78c.04.36.27.66.61.8.43.17 7.42 2.87 18.47 2.87 5.51 0 12.03-.67 19.24-2.66.38-.11.66-.43.71-.83l.63-5.78c.11-.94.12-1.84.06-2.69h.24c3.47 0 6.98-.48 10.45-1.44.38-.11.66-.43.71-.83l.34-3.12c.24-2.04-.21-3.73-1.33-5.03zm-13.95-9.31c-.04-.36-.06-.69-.06-1.01-.01-1.43.36-2.52 1.11-3.25 1.16-1.14 2.9-1.11 2.98-1.1.38-.01 3.67.01 3.99 3.69.05.49.04 1.05-.03 1.7 0 .03-.3 3.29-2.44 4.82-.03.02-.05.03-.08.05-.05.04-.1.07-.15.1-.83.51-1.82.51-2.65 0-.05-.03-.1-.07-.15-.1-.03-.02-.05-.04-.08-.05-.07-.05-.13-.1-.19-.15-1.96-1.6-2.25-4.66-2.25-4.7zM37.87 36.48l-2.28 3.93-2.22-2.26 3.31-2.96c.35.53.75.96 1.19 1.29zm-5.86 3.05 1.37 1.4-1.3 1.44c-.03.03-.05.06-.08.1a.7.7 0 0 0-.08-.1l-1.23-1.35 1.32-1.49zm-3.63-5.92c.12-.7.18-1.67.21-2.54 1.08.56 2.24.85 3.41.85 1.18 0 2.35-.3 3.42-.87.06.66.2 1.46.44 2.27l-3.9 3.48-3.58-3.19zM32 43.99l1.51 7.65L32 52.8l-1.52-1.16L32 43.99zm-6.04-33.31c2.41-2.36 5.97-2.28 6.08-2.27.29-.01 6.95-.16 8.12 6.64-4.66.33-10.76-2.87-10.83-2.9a.985.985 0 0 0-1.02.06l-4.54 3.18c.27-1.96 1-3.54 2.19-4.71zm-2.19 8.59c-.05-.5-.08-.98-.1-1.44l5.28-3.69c1.68.82 6.94 3.17 11.38 2.84.02.72 0 1.47-.1 2.31-.01.07-.61 6.54-4.91 9.58a.36.36 0 0 0-.1.07 6.1 6.1 0 0 1-.32.22c-1.81 1.12-3.97 1.12-5.79 0-.11-.07-.22-.14-.33-.22-.03-.03-.07-.05-.11-.07-.15-.11-.3-.22-.44-.34-3.89-3.17-4.45-9.18-4.46-9.26zm3.7 16.12 3.14 2.8-1.93 2.19-2.51-4.01c.5-.27.94-.59 1.3-.98zm-20.1-9.68c-.04-.35-.06-.69-.06-1.01-.01-1.43.36-2.52 1.11-3.25 1.16-1.14 2.91-1.1 2.98-1.1.15 0 3.66-.09 3.99 3.69.05.48.04 1.04-.03 1.69 0 .03-.32 3.3-2.45 4.83-.03.02-.05.03-.08.05-.05.04-.1.07-.15.1-.83.51-1.82.51-2.65 0-.05-.03-.1-.07-.15-.1-.03-.02-.05-.04-.08-.05-.07-.05-.13-.1-.2-.15-1.94-1.59-2.23-4.65-2.23-4.7zm4.71 17.78c-4.94.13-8.52-.82-9.82-1.24l-.27-2.5c-.17-1.48.13-2.67.87-3.54 1.37-1.59 3.85-1.71 3.87-1.71.03 0 .07 0 .1-.01.32-.04.63-.11.91-.2.01 0 .01-.01.02-.01 1.11-.36 1.66-.99 1.95-1.58a4.313 4.313 0 0 0 3.28.01c.34.76 1.02 1.35 1.98 1.66h.02c.28.09.58.16 1.01.22.03 0 2.15.11 3.56 1.39-1.77.57-3.83 1.58-5.4 3.4-1.03 1.18-1.71 2.56-2.08 4.11zm38.14 4.55-.56 5.13c-18.5 4.93-32.44.84-35.31-.12l-.57-5.18c-.33-2.98.28-5.41 1.82-7.2 1.66-1.93 4.09-2.78 5.79-3.16.02 0 .03-.01.05-.01 1.12-.25 1.92-.29 1.94-.29.03 0 .07 0 .1-.01.29-.04.56-.09.81-.15l3.42 5.47c.16.26.44.43.74.45h.08c.28 0 .54-.12.73-.33l.14-.16.75.83-1.7 8.55c-.07.36.07.74.36.96l2.59 1.97c.17.13.38.2.59.2.21 0 .42-.07.59-.2l2.58-1.97c.29-.22.43-.6.36-.96l-1.69-8.55.9-1 .36.37c.18.19.43.29.69.29.04 0 .08 0 .12-.01.3-.04.57-.21.72-.47l3.06-5.26c.27.06.54.11.83.15.03 0 .07.01.1.01.05 0 4.97.21 7.77 3.45 1.55 1.79 2.17 4.21 1.84 7.2zm11.8-8.07-.27 2.46c-3.27.84-6.58 1.22-9.84 1.17-.37-1.53-1.05-2.88-2.05-4.04-1.6-1.86-3.72-2.88-5.51-3.44 1.4-1.38 3.64-1.5 3.66-1.5.04 0 .09-.01.13-.01.28-.05.57-.11.86-.2h.02c.01 0 .01-.01.02-.01h.02c1.1-.36 1.65-.98 1.93-1.57a4.313 4.313 0 0 0 3.28.01c.34.76 1.01 1.34 1.96 1.66.01 0 .02.01.03.02.29.09.6.15 1.02.21.02 0 2.5.13 3.86 1.71.74.85 1.04 2.04.88 3.53z">
+                            </path>
+                        </svg>
+                        <h5>Bussiness</h5>
+                        <p>Business is the engine that drives economies, innovation, and growth worldwide. It encompasses a wide spectrum of activities aimed at producing, selling, and exchanging goods and services to meet the needs and desires of consumers.
+
+                        </p>
+                    </span>
+                </article>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------End of Categories--------------------- -->
+
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="container course__container">
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/course1.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Responsive Social Media Website UI Design</h4>
+                    <p>
+                        Responsive Social Media Website UI Design is a critical aspect of creating an engaging and user-friendly online platform for social interactions. With the widespread use of smartphones, tablets, and various screen sizes, responsive design ensures that users can access and interact with a social media website seamlessly across different devices and platforms.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn more</a>
+                </div>
+            </article>
+
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/course2.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Responsive Smart Home Website Design</h4>
+                    <p>
+                        Responsive Smart Home Website Design is a specialized approach to creating a user interface for a website dedicated to managing and controlling various smart home devices and systems. With the growing popularity of smart home technology, such a website serves as a central hub where users can monitor, control, and customize their connected devices from any device with an internet connection.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn more</a>
+                </div>
+            </article>
+
+
+
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/course3.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Responsive Admin Dashboard UI Design</h4>
+                    <p>
+                        Responsive Admin Dashboard UI Design is a specialized approach to creating a user interface for administrative purposes, commonly used to manage and oversee various aspects of a website, application, or system. An admin dashboard provides a centralized hub for monitoring, analyzing data, managing users, and making informed decisions.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn more</a>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    <!-- -----------------------------End of Courses--------------------- -->
+    <section class="faqs">
+        <h2>Frequently Asked Questions </h2>
+        
+        <div class="container faqs__container">
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>How do I know the right course for me?</h4>
+                    <p>
+                    You Can Chose any course according to your interest.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>Is This Website is Secure?</h4>
+                    <p>
+                       Yes! This website is absolutly secure.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>What are the Payment methods?</h4>
+                    <p>
+                        We accept online payment through paytm,upi and net banking.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>Do you have qualified teachers?</h4>
+                    <p>
+                        Yes we have the best teachers in each domain.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>How Much courses do you offer?</h4>
+                    <p>
+                        We have more than 450 courses.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>Do you have doubt sessions?</h4>
+                    <p>
+                      Yes we do have Doubt sessions in each domain.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>Do your courses are helpful?</h4>
+                    <p>
+                        Yes by following our course many students have reached they goal.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>Who are you?</h4>
+                    <p>
+                        I am Rajnandan Prasad.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>Why should i believe you?</h4>
+                    <p>
+                      Because you have no other choice.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256" id="plus-circle"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="88" x2="168" y1="128" y2="128" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" x2="128" y1="88" y2="168" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div>
+                   
+                <div class="question__answer">
+                    <h4>What you can do if i dont take your course?</h4>
+                    <p>
+                        I will call FBI.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+<!-- -----------------------------End of faqs----------------- -->
+<section class="container testimonials__Container mySwiper">
+    <h2>Students Reviews</h2>
+    
+    <div class="swiper-wrapper">
+       
+    <article class="testimonial swiper-slide">
+        <div class="avatar">
+            <img src="./images/avatar1.jpg" >
+        </div>
+        <div class="testimonial__info">
+            <h5>Diana Ayi</h5>
+            <small>Student</small>
+        </div>
+        <div class="testimonial__body">
+            <p>
+                I recently completed the Comprehensive Web Development Mastery course, and I must say, it exceeded my expectations in every way. This course is an absolute gem for anyone looking to dive into the world of web development.
+
+                From the very beginning, the instructor's clear and concise explanations made complex concepts seem approachable. The course starts with the fundamentals, ensuring a strong foundation, and gradually progresses to more advanced topics. This logical flow kept me engaged and motivated throughout the learning journey.
+            </p>
+        </div>
+    </article>
+
+    <article class="testimonial swiper-slide">
+        <div class="avatar">
+            <img src="./images/avatar2.jpg" >
+        </div>
+        <div class="testimonial__info">
+            <h5>Ayan Raj</h5>
+            <small>Web Developer</small>
+        </div>
+        <div class="testimonial__body">
+            <p>
+                The course covers a wide range of technologies including HTML, CSS, JavaScript, and even introduces popular frameworks like React and Node.js. By the end of the course, I felt equipped to build dynamic and responsive websites from scratch.
+            </p>
+        </div>
+    </article>
+
+
+    <!-- <article class="testimonial swiper-slide">
+        <div class="avatar">
+            <img src="./images/avatar3.jpg" >
+        </div>
+        <div class="testimonial__info">
+            <h5>Aman</h5>
+            <small>Softwer engineer</small>
+        </div>
+        <div class="testimonial__body">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquam aut aliquid, amet unde aperiam iusto officia? Autem cum tenetur, inventore ratione pariatur ex. Sapiente, reiciendis delectus quas quis ex autem eius est labore.
+            </p>
+        </div>
+    </article> -->
+
+
+    <!-- <article class="testimonial swiper-slide">
+        <div class="avatar">
+            <img src="./images/avatar4.jpg" >
+        </div>
+        <div class="testimonial__info">
+            <h5>Muskan </h5>
+            <small>Freelancer</small>
+        </div>
+        <div class="testimonial__body">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquam aut aliquid, amet unde aperiam iusto officia? Autem cum tenetur, inventore ratione pariatur ex. Sapiente, reiciendis delectus quas quis ex autem eius est labore.
+            </p>
+        </div>
+    </article>
+
+
+    <article class="testimonial swiper-slide">
+        <div class="avatar">
+            <img src="./images/avatar5.jpg" >
+        </div>
+        <div class="testimonial__info">
+            <h5>Sushma</h5>
+            <small>Gamer</small>
+        </div>
+        <div class="testimonial__body">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquam aut aliquid, amet unde aperiam iusto officia? Autem cum tenetur, inventore ratione pariatur ex. Sapiente, reiciendis delectus quas quis ex autem eius est labore.
+            </p>
+        </div>
+    </article> -->
+</div>
+<!-- <div class="swiper-pagination"></div> -->
+
+</section>
+
+<!-- -----------------------------footer ------- -->
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__1">
+            <a href="index.html" class="footer__logo">
+                <h4>Raj Academy</h4>
+            </a>
+            <p>We are offering a diverse range of learning opportunities and resources to individuals seeking to expand their knowledge and skills.</p>
+
+        </div>
+
+
+        <div class="footer__2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+            
+        </div>
+
+
+        <div class="footer__3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+91 8393839983</p>
+                <p>shdfh@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer__socials">
+            <li>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+        </div>
+
+      
+
+
+
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright  to Rajnandan Prasad</small>
+    </div> 
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+    <!-- swiper js  --><script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+           
+            
+            
+          },
+          breakpoints:{
+            600: {
+                slidesPerView: 2, 
+            }}
+        });
+        
+    
+      </script>
+</body>
+
+</html>
